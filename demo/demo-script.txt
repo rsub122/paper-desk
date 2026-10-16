@@ -1,0 +1,119 @@
+PAPER DESK - 3-MINUTE DEMO SCRIPT
+Daytona HackSprint x Arize, NYC, Oct 16 2026
+
+Pitch: Before you trust an AI trading strategy, get a second opinion in seconds,
+and see a record of whether we were right.
+
+------------------------------------------------------------
+THE PROBLEM
+- AI writes a trading strategy and backtest in minutes. The results are often not real.
+- Five AI trading methods lost 50-72% of their return after the model's training
+  cutoff (Profit Mirage study).
+- The code can peek at future prices, or the plan is just lucky after many tries.
+- People decide by looking at a chart.
+
+WHAT WE BUILT
+- Plain-English plan in, one verdict out: Trust, Be careful, or Do not trust, with reasons.
+- Claude writes the code. 10 Daytona sandboxes test it on 30 stocks.
+- Arize records every step. The "why" answer comes only from that record.
+- Each verdict is sealed with a date, a hash, and an Alpaca paper trade.
+
+HOW WE ARE DIFFERENT
+- Existing checkers are free tools for coders. Ours is plain English, about 30 seconds.
+- We safely run a stranger's code: no internet, no keys in the sandbox.
+- The explanation is checked against the trace, number by number.
+- The sealed record grows with time. Nobody can fake it afterwards.
+
+------------------------------------------------------------
+THE SCRIPT
+Rory = drives the laptop and does the reveals
+Roman = frames the problem and talks during the waits
+
+[0:00] ROMAN
+"AI can write a trading strategy in minutes. The problem is the backtests are
+often not real. In one study, five AI trading methods lost 50 to 72 percent of
+their return once they were tested after the model's training cutoff. And most
+people just look at the chart and trust it."
+  >> DASHBOARD: Desk page open, empty. "Demo: plant a cheating line" already ON.
+
+[0:20] RORY
+"Paper Desk is a second opinion. You type your plan in plain English, and in
+about 30 seconds you get one verdict: Trust, Be careful, or Do not trust, with
+plain reasons."
+  >> DASHBOARD: Point at the 4-step strip across the top.
+
+[0:30] RORY
+"Buy Costco when it drops 5 percent, sell after 10. To be upfront: I've switched
+on one planted cheating line. Agents don't cheat on cue, and we need to prove
+the checker really works."
+  >> DASHBOARD: Click the Costco example, then "Test my plan". Live run tab opens.
+
+[0:45] ROMAN
+"Claude just turned that sentence into Python. Now ten Daytona computers start
+up. Each one is cut off from the internet with no keys inside, because this is
+someone else's code. They test it on 30 stocks in parallel, and every line you
+see is real output."
+  >> DASHBOARD: Terminals stream. Point at the steps: Claude agent, then Daytona sandboxes.
+
+[1:05] ROMAN
+"Each sandbox re-runs the strategy 50 times with the future hidden. If a past
+decision changes, the code was reading the future."
+  >> DASHBOARD: Wait for red "LEAK" lines in the terminals.
+
+[1:15] RORY  (key moment)
+"Three point seven million percent. Too good to be true, and here is why: Do not
+trust. It peeked at tomorrow's price on this exact line, and we caught it on 30
+of 30 stocks."
+  >> DASHBOARD: Scroll up to the verdict. Read the line number off the red stamp
+     (it changes every run).
+
+[1:30] ROMAN
+"Why did it fail? The answer is written only from the Arize trace of this run.
+Then we check every number in it against the trace. If the AI invents a number,
+it gets flagged."
+  >> DASHBOARD: "Why this verdict?" -> "Ask". Point at the badge "Every number
+     matches the trace". Optional: flash the Arize tab.
+
+[1:55] RORY
+"Fix it. Claude writes four honest versions of the plan, and all four run at
+once on Daytona."
+  >> DASHBOARD: "Fix it" tab -> "Run 4 variants". Takes about 20 seconds.
+
+[2:05] ROMAN
+"We also count every try. Test enough plans and one looks great by pure luck.
+With this much data, about 45 tries is the limit. That counter is on screen."
+  >> DASHBOARD: Point at "Plans tested so far".
+
+[2:20] RORY
+"The cheating line is gone. Here are the honest versions, with how each did on
+data the AI never saw."
+  >> DASHBOARD: Point at the results table: Locked column and Verdict column.
+
+[2:30] ROMAN
+"Last, we seal the verdict with a date, a fingerprint, and a one-share paper
+trade on Alpaca. Over time that builds a record of whether our verdicts were
+right, and nobody can edit it afterwards."
+  >> DASHBOARD: "Seal & share" tab -> "Seal" -> "Open shareable card".
+
+[2:50] RORY  (close)
+"Paper money only, not financial advice. Other tools do these checks for coders.
+We give anyone a plain-English second opinion, run safely, and explained from
+the record. Before you trust an AI trading strategy, get a second opinion in
+seconds."
+  >> DASHBOARD: Back on the Desk, open "What we claim". End.
+
+------------------------------------------------------------
+BEFORE YOU GO ON STAGE
+1. Do one warm-up run 5 minutes before. Then wait 30 seconds.
+2. Reload the Desk page and reset "Plans tested so far" with the reset button.
+3. Turn "Demo: plant a cheating line" ON.
+4. Open the Arize project "paper-desk" in a second tab.
+5. Do not restart the dev server. That loses the run.
+
+IF SOMETHING GOES WRONG
+- Run is slow: keep talking. The terminals are the visual.
+- Run fails: say "live demo", press "Test my plan" again.
+- Paper order says "accepted": the market is closed. Say "queued for the open".
+- A judge asks if it is rigged: turn the switch OFF and run. It comes back Trust.
+
+Practice only. Not financial advice. Past results do not predict future results.

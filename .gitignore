@@ -1,0 +1,26 @@
+# secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# local state (seals, order ids, trial counter)
+web/.data/
+
+# python
+engine/.venv/
+engine/.tmp/
+__pycache__/
+*.pyc
+
+# node / next
+node_modules/
+.next/
+*.tsbuildinfo
+next-env.d.ts
+.vercel
+
+# local tooling
+.claude/
+.DS_Store
